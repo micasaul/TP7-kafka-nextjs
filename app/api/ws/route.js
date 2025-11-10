@@ -23,5 +23,3 @@ export async function GET() {
   const server = ensureWSS();
   return NextResponse.json({ ws: true, clients: server.clients.size });
 }
-
-ensureWSS();

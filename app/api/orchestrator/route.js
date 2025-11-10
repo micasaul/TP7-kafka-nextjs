@@ -61,5 +61,3 @@ export async function GET() {
   await boot();
   return NextResponse.json({ ok: true });
 }
-
-boot().catch((err) => console.error('Orchestrator init error:', err));

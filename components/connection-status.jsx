@@ -6,8 +6,8 @@ export default function ConnectionStatus({ status }) {
     status === 'connecting' ? 'orange' : 'red';
 
   return (
-    <p>
-      Estado WebSocket: <b style={{ color }}>{status}</b>
+    <p style={{ fontWeight: 300}}>
+      Estado WebSocket: <b style={{ color, fontWeight: 300 }}>{status}</b>
     </p>
   );
 }
